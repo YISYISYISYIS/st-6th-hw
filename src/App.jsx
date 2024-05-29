@@ -19,7 +19,7 @@ const App = () => {
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => item.toLocaleLowerCase().includes("item"));
-  }, []);
+  }, [items]);
 
   return (
     <div>
